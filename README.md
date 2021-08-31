@@ -20,12 +20,16 @@ Summary of what I studied about DICOM
 
 ## **DICOM Data Format**
 ![DICOM Data Format에 대한 이미지](https://user-images.githubusercontent.com/66043707/131492408-fd439b91-8005-4809-8bf9-37cb839fb75b.png)
+> 이미지 출처: http://cgac.chungbuk.ac.kr/Uploads/LECTURE/DICOM-COOKBOOk.doc
+
 - **File Preamble** (128 byte): 특별한 사용이나 Application Profile을 위해 사용될 수 있음
 - **DICOM Prefix** (4 Byte): File Preamble 다음에 나오는 Prefix로 해당 파일이 DICOM이라는 것을 명시함
 - **File Meta Element:** 파일에 대한 Attribute를 Data Element의 모음으로 나타냄
 - **Information Object:** 이미지/영상 데이터
 
 ![File Meta Elements 부분 구성 이미지](https://user-images.githubusercontent.com/66043707/131492420-c930675e-0098-4c41-afa5-e0592d1f7ccf.png)
+> 이미지 출처: http://cgac.chungbuk.ac.kr/Uploads/LECTURE/DICOM-COOKBOOk.doc
+
 - **Fig 1.**에서 **File Meta elements** 부분은 **Fig 2.**와 같은 방식으로 구성되는데, 각 **Data element** 마다 순서대로 **Attribute** 정보가 저장되며 각 Data element는 아래 4가지 사항으로 구성
   - **Tag** (4 byte): 앞서 정의된 Attribute의 Tag로 어떠한 Attribute인지를 명시
   - **VR** (Value Representation, 2 byte): 속상 값의 타입을 명시
