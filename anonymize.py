@@ -10,7 +10,6 @@ import multiprocessing
 import pylibjpeg
 import pandas as pd
 import numpy as np
-
 from tqdm import tqdm
 from pydicom.tag import Tag
 
@@ -30,10 +29,9 @@ def get_all_dcm_paths(input_dir, file_exts):
 if __name__ == '__main__':
     multiprocessing.freeze_support()
 
-    parser = argparse.ArgumentParser(description='Get All DICOM Paths')
+    parser = argparse.ArgumentParser(description='DICOM Anonymize Toolkit')
     parser.add_argument('-i', '--input-path', type=str, required=True, help='input path of original files')
     parser.add_argument('-f', '--file-ext', nargs='*', type=str, help='file extentions of input directory')
-
     _args = parser.parse_args()
 
     if os.path.isdir(_args.input_path):
