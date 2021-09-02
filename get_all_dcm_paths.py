@@ -30,9 +30,8 @@ def get_all_dcm_paths(input_dir, file_exts):
 if __name__ == '__main__':
     multiprocessing.freeze_support()
 
-    parser = argparse.ArgumentParser(description='DICOM Anonymize Toolkit')
+    parser = argparse.ArgumentParser(description='Get All DICOM Paths')
     parser.add_argument('-i', '--input-path', type=str, required=True, help='input path of original files')
-    parser.add_argument('-o', '--output-dir', type=str, default='output', help='directory for output DICOM files')
     parser.add_argument('-f', '--file-ext', nargs='*', type=str, help='file extentions of input directory')
 
     _args = parser.parse_args()
