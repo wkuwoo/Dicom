@@ -1,10 +1,10 @@
 # DICOM
 Summary of what I studied about DICOM
 ## Contents
-1. [DICOM File의 구성요소](# dicom-file의-구성요소)
-2. [DICOM Data Format](# dicom-data-format)
-3. [DICOM Data Anonymize](# dicom-data-anonymize)
-4. [References](# references)
+1. [DICOM File의 구성요소](#dicom-file의-구성요소)
+2. [DICOM Data Format](#dicom-data-format)
+3. [DICOM Data Anonymize](#dicom-data-anonymize)
+4. [References](#references)
 
 ## DICOM File의 구성요소
 ![DICOM File의 구성요소에 대한 표](https://user-images.githubusercontent.com/66043707/131494675-e55744fd-8f99-41d5-92b7-787639ee0186.png)
